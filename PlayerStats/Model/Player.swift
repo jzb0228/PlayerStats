@@ -10,40 +10,25 @@ import Foundation
 struct Player {
     var name: String
     var team: String
-    var team2: String?
-    var careerFG: Double
-    var careerFT: Double
+    var fgPct: Double
+    var ftPct: Double
     var pts: Double
-    var threes: Double
-    var rebounds: Double
-    var assists: Double
-    var steals: Double
-    var blocks: Double
+    var threePct: Double
+    var reb: Double
+    var ast: Double
+    var stl: Double
+    var blk: Double
     
-    init(_ name: String, _ team: String, _ careerFG: Double, _ careerFT: Double, _ pts: Double, _ threes: Double, _ rebounds: Double, _ assists: Double, _ steals: Double, _ blocks: Double) {
+    init(_ name: String, _ team: String, _ fgPct: Double, _ ftPct: Double, _ threePct: Double, _ pts: Double, _ reb: Double, _ ast: Double, _ stl: Double, _ blk: Double) {
         self.name = name
         self.team = team
-        self.careerFG = careerFG
-        self.careerFT = careerFT
+        self.fgPct = fgPct
+        self.ftPct = ftPct
         self.pts = pts
-        self.threes = threes
-        self.rebounds = rebounds
-        self.assists = assists
-        self.steals = steals
-        self.blocks = blocks
-    }
-    
-    init(_ name: String, _ team: String, _ team2: String, _ careerFG: Double, _ careerFT: Double, _ pts: Double, _ threes: Double, _ rebounds: Double, _ assists: Double, _ steals: Double, _ blocks: Double) {
-        self.name = name
-        self.team = team
-        self.team2 = team2
-        self.careerFG = careerFG
-        self.careerFT = careerFT
-        self.pts = pts
-        self.threes = threes
-        self.rebounds = rebounds
-        self.assists = assists
-        self.steals = steals
-        self.blocks = blocks
+        self.threePct = threePct
+        self.reb = reb
+        self.ast = ast
+        self.stl = stl
+        self.blk = blk
     }
 }
